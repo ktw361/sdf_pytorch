@@ -2,6 +2,8 @@
 
 In this package we provide a CUDA implementation of the SDF computation as well as of the SDF-based collision function.
 
+Forked from https://github.com/hassony2/multiperson
+
 ## Installation instructions
 
 You can install the package by running
