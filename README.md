@@ -1,3 +1,7 @@
+## NOTE
+
+There is a branch for pytorch-2.0, checkout --branch torch2.0
+
 ## Implementation of the SDF Loss
 
 In this package we provide a CUDA implementation of the SDF computation as well as of the SDF-based collision function.
