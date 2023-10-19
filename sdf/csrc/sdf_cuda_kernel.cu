@@ -318,7 +318,7 @@ at::Tensor sdf_cuda(
     const dim3 blocks ((batch_size * grid_size * grid_size * grid_size) / threads);
 
 
-    AT_DISPATCH_FLOATING_TYPES(phi.type(), "sdf_cuda", ([&] {
+    AT_DISPATCH_FLOATING_TYPES(phi.scalar_type(), "sdf_cuda", ([&] {
       sdf_cuda_kernel<scalar_t><<<blocks, threads>>>(
           phi.data<scalar_t>(),
           faces.data<int32_t>(),
